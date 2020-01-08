@@ -1,0 +1,213 @@
+.btn {
+    display: inline-block;
+    background-color: firebrick;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    filter: brightness(1.1)
+}
+
+.hes-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.hes-gallery img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hes-gallery img:hover
+{
+    transform: scale(1.04);
+    box-shadow: 2px 2px 6px orange;
+}
+
+
+p
+{
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    main{
+        width: 100%;
+    }
+    header img{
+        width: 80%;
+        object-fit: contain;
+    }
+    .hes-gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .hes-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.footer #button{
+  width:35px;
+  height:35px;
+  border: #222 12px solid;
+  background-color: #deb887;
+  border-radius:35px;
+  margin:0 auto;
+  box-shadow: 0 0 5px 2px #deb887;
+  position:relative;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+  width:35px;
+  height:35px;
+  border: #deb887 12px solid;
+  background-color: #222;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  position:relative;
+}
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  z-index:999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  height: 10em;
+}
+.footer #container{
+  margin-top:5px;
+  width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  background: #222;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+  width:150px;
+  height:auto;
+  margin:0 auto;
+}
+.footer_center{
+  width:500px;
+  float:left;
+  text-align:center;
+}
+.footer h4{
+  font-family: 'Helvetica';
+  font-size: 30px;
+  font-weight: 100;
+  margin-top:70px;
+  margin-left:40px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  border: orange 2px solid; 
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  background: #222;
+  margin-top: -30px;
+  padding: 20px;
+  color: orange;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: orange;
+  color: #222;
+  opacity: .8;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: orange;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #111;}
